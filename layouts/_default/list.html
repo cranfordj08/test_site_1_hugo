@@ -1,0 +1,9 @@
+<h1>List Template</h1>
+
+{{define "main"}}
+    This is the list template
+{{ end }}
+
+{{ range .Pages }}
+    {{ .Title }}<br/>
+{{ end }}

@@ -1,0 +1,17 @@
+<h1>Single Template</h1>
+<h2 style="color: {{ .Params.color }};">{{ .Title }}</h2>
+<h6>{{ .Date }}</h6>
+<p>{{ .Params.myVar }}</p>
+<p>{{ $myVarName := "aString" }}</p>
+{{ $myVarName }}
+
+{{ truncate 10 "This is a really long string!"}}
+{{ add 1 5 }}
+{{ singularize "dogs" }}
+
+{{define "main"}}
+    This is the single template
+{{ end }}
+{{define "footer"}}
+    This is the single footer
+{{ end }}
